@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo Capão Alto | True Crime Investigações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#casos">Casos</a></li>
+      <li><a href="#evidencias">Evidências</a></li>
+      <li><a href="#acusacao">Acusação</a></li>
+    </ul>
+  </nav>
+
+  <div class="case-page">
+    <header class="case-header">
+      <div class="case-header-content">
+        <div class="case-header-top">
+          <span class="case-header-badge active">CASO ATIVO</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold);">CAPAO-589</span>
+        </div>
+        <h1 class="case-header-title">Protocolo Capão Alto</h1>
+        <div class="case-header-meta">
+          <span>🔒 Código: CAPAO-589</span>
+          <span>📊 Dificuldade: Difícil</span>
+          <span>📋 Evidências: 6</span>
+          <span>🏆 Pontuação Máxima: 1000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="case-progress">
+      <div class="progress-bar">
+        <div class="progress-step completed"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="progress-labels">
+        <span>Briefing</span>
+        <span>Evidências</span>
+        <span>Pistas</span>
+        <span>Acusação</span>
+        <span>Solução</span>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-briefing">📋 BRIEFING</button>
+        <button class="tab-btn" data-tab="tab-evidence">🔬 EVIDÊNCIAS</button>
+        <button class="tab-btn" data-tab="tab-timeline">⏱️ CRONOLOGIA</button>
+        <button class="tab-btn" data-tab="tab-suspects">👤 SUSPEITOS</button>
+        <button class="tab-btn" data-tab="tab-hints">💡 PISTAS</button>
+        <button class="tab-btn" data-tab="tab-accusation">⚖️ ACUSAÇÃO</button>
+        <button class="tab-btn" data-tab="tab-solution">🔓 SOLUÇÃO</button>
+      </div>
+
+      <div id="tab-briefing" class="tab-panel active">
+        <div class="case-file">
+          <div class="case-file-header">
+            <h2>Dossiê Forense Técnico</h2>
+            <div class="meta">CLASSIFICADO • TRUE CRIME INVESTIGAÇÕES</div>
+          </div>
+          <div class="case-file-section">
+            
+      <p><strong>RESUMO DO CASO:</strong> Extorsão mediante sequestro com resultado morte de Rafael Kim Andrade Vasconcelos, 34 anos, CEO da corretora de criptoativos NeoPay Holdings. Vítima dissolvida em hidróxido de potássio em tanque industrial.</p>
+
+      <p><strong>VÍTIMA:</strong> Rafael Kim Andrade Vasconcelos, 34 anos, fundador e CEO da NeoPay Holdings. Sequestrado há 12 dias.</p>
+
+      <p><strong>CENA DO CRIME:</strong> Galpão desativado de antiga usina de biodiesel, Rodovia Vicinal RV-7, Km 12, Distrito de Capão Alto.</p>
+
+      <p><strong>DINÂMICA:</strong> A vítima foi mantida em cativeiro climatizado com controle biométrico e sedação por midazolam. Executada por hidrólise alcalina em tanque de aço inoxidável. A falha estequiométrica preservou fragmentos ósseos com DNA nuclear degradado.</p>
+
+      <p><strong>EVIDÊNCIAS CHAVE:</strong> Digital de Diana Ferraz Kowalski na luva de nitrila perfurada (14 pontos AFIS). Roteador mesh offline com mensagens criptografadas. Smartphone descartado com sondas Wi-Fi traçando trajeto até o galpão. Perfil genético parcial: 99,998% compatível.</p>
+
+      <p><strong>MOTIVAÇÃO:</strong> Obtenção de grande quantia em criptoativos (Monero) mediante sequestro e extorsão. O pagamento foi recusado em Bitcoin. Os autores executaram a vítima ao perceberem o cerco policial.</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-evidence" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CADEIA DE CUSTÓDIA</span>
+          <h2 class="section-title">Evidências do Caso</h2>
+        </div>
+        <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🏭</div>
+            <div>
+              <div class="evidence-card-title">Tanque de Aço</div>
+              <div class="evidence-card-type">Química</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Resíduo saponificado e fragmentos ósseos parciais. Hidróxido de potássio insuficiente para dissolução completa. Falha estequiométrica.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💉</div>
+            <div>
+              <div class="evidence-card-title">Bomba de Infusão</div>
+              <div class="evidence-card-type">Farmacológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Midazolam de uso hospitalar. Administração dosada e controlada. Indica conhecimento técnico de enfermagem ou farmacologia.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📡</div>
+            <div>
+              <div class="evidence-card-title">Roteador Mesh</div>
+              <div class="evidence-card-type">Tecnológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Comunicação criptografada offline. Mensagem: "Sem Monero não fecha. A Enfermeira que decida. O tanque resolve."</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💰</div>
+            <div>
+              <div class="evidence-card-title">Carteira de Criptoativos</div>
+              <div class="evidence-card-type">Financeira</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Cofre portátil vazio. Configurado para Monero. Vítima executada antes da confirmação da transferência.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🧤</div>
+            <div>
+              <div class="evidence-card-title">Luva de Nitrila</div>
+              <div class="evidence-card-type">Papiloscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Perfuração microscópica na ponta do indicador. 14 pontos de coincidência com Diana Ferraz Kowalski no AFIS.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📱</div>
+            <div>
+              <div class="evidence-card-title">Smartphone Descartado</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Sem chip, sem bateria. Sondas Wi-Fi reconstruíram trajeto até o galpão. Histórico de 12 dias de deslocamento.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="tab-timeline" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">LINHA DO TEMPO</span>
+          <h2 class="section-title">Cronologia dos Eventos</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item"><div class="timeline-time">03/07</div><div class="timeline-content">Rafael Kim Andrade Vasconcelos é sequestrado</div></div>
+          <div class="timeline-item"><div class="timeline-time">03-12/07</div><div class="timeline-content">Vítima mantida em cativeiro climatizado no galpão de biodiesel</div></div>
+          <div class="timeline-item"><div class="timeline-time">13/07 • 02h48</div><div class="timeline-content">Mensagem no roteador mesh: "Sem Monero não fecha"</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">13/07 • Madrugada</div><div class="timeline-content">Execução da vítima. Início da hidrólise alcalina no tanque.</div></div>
+          <div class="timeline-item"><div class="timeline-time">13/07 • 09h40</div><div class="timeline-content">Equipe pericial adentra o galpão desativado</div></div>
+          <div class="timeline-item"><div class="timeline-time">13/07</div><div class="timeline-content">Larvas de dípteros necrófagos indicam óbito na madrugada de 13/07</div></div>
+          <div class="timeline-item"><div class="timeline-time">15/07</div><div class="timeline-content">Perfil genético parcial confirmado: 99,998% compatível</div></div>
+        
+        </div>
+      </div>
+
+      <div id="tab-suspects" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">PERFILAMENTO CRIMINAL</span>
+          <h2 class="section-title">Suspeitos e Envolvidos</h2>
+        </div>
+        <div class="suspects-grid">
+          
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">D</div>
+            <div class="suspect-card-info">
+              <h4>Diana Ferraz Kowalski ("Enfermeira")</h4>
+              <div class="role">Executora / Coordenadora</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dinheiro</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digital na luva, conhecimento técnico, mensagens no roteador</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">L</div>
+            <div class="suspect-card-info">
+              <h4>Lucas Henrique Vidal ("Logístico")</h4>
+              <div class="role">Executor / Transporte</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dinheiro</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digital na bomba de infusão, movimentação do veículo</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">M</div>
+            <div class="suspect-card-info">
+              <h4>Murilo Sanches Prado ("Bit")</h4>
+              <div class="role">Especialista Digital</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dinheiro</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Roteador mesh, carteira de criptoativos, sondas Wi-Fi</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">R</div>
+            <div class="suspect-card-info">
+              <h4>Ricardo Montenegro ("Mestre")</h4>
+              <div class="role">Mentor / Financiador</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Obtenção de criptoativos</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Compra do equipamento, pagamento em Monero</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="tab-hints" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">SISTEMA DE APOIO</span>
+          <h2 class="section-title">Pistas Graduais</h2>
+          <p class="section-subtitle">
+            Use com moderação. Cada pista revelada reduz sua pontuação final.
+          </p>
+        </div>
+        <div class="hint-container">
+          <div class="hint-header">
+            <div class="hint-header-icon">💡</div>
+            <div class="hint-header-title">Sistema de Pistas</div>
+          </div>
+          <div class="hint-levels">
+            
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 1 — DIRECIONAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-capao-1" onclick="revealHint('capao', 1)">
+              REVELAR (-50 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-capao-1">
+            A vítima foi dissolvida em hidróxido de potássio no tanque de uma usina de biodiesel. A falha estequiométrica preservou fragmentos ósseos.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 2 — APONTAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-capao-2" onclick="revealHint('capao', 2)">
+              REVELAR (-100 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-capao-2">
+            Uma luva de nitrila com perfuração revelou a digital de Diana Ferraz Kowalski ("Enfermeira"). Ela tinha conhecimento técnico de enfermagem.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 3 — REVELAÇÃO</span>
+            <button class="hint-level-btn" id="hint-btn-capao-3" onclick="revealHint('capao', 3)">
+              REVELAR (-150 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-capao-3">
+            O roteador mesh offline continha mensagens não sincronizadas. O smartphone descartado no bueiro tinha sondas Wi-Fi que traçaram o trajeto até o galpão.
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-accusation" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">FORMALIZAÇÃO</span>
+          <h2 class="section-title">Formule sua Acusação</h2>
+          <p class="section-subtitle">
+            Seja preciso. A justiça exige provas, não suposições.
+          </p>
+        </div>
+        
+    <div class="accusation-form">
+      <div class="form-group">
+        <label class="form-label">👤 AUTOR DO CRIME</label>
+        <select class="form-select" id="accusation-suspect-capao">
+          <option value="">Selecione o suspeito...</option>
+          <option value="Diana Ferraz Kowalski ("Enfermeira")">Diana Ferraz Kowalski ("Enfermeira")</option><option value="Lucas Henrique Vidal ("Logístico")">Lucas Henrique Vidal ("Logístico")</option><option value="Murilo Sanches Prado ("Bit")">Murilo Sanches Prado ("Bit")</option><option value="Ricardo Montenegro ("Mestre")">Ricardo Montenegro ("Mestre")</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🎯 MOTIVO</label>
+        <input type="text" class="form-input" id="accusation-motive-capao" placeholder="Qual foi o motivo do crime?">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📋 EVIDÊNCIAS QUE SUSTENTAM A ACUSAÇÃO</label>
+        <textarea class="form-textarea" id="accusation-evidence-capao" placeholder="Liste as evidências que comprovam sua tese..."></textarea>
+      </div>
+      <button class="btn btn-danger" style="width: 100%;" onclick="submitAccusation('capao')">
+        ⚖️ FORMALIZAR ACUSAÇÃO
+      </button>
+    </div>
+    
+      </div>
+
+      <div id="tab-solution" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CONFIDENCIAL</span>
+          <h2 class="section-title">Solução Oficial</h2>
+        </div>
+        
+    <div class="solution-reveal locked" id="solution-capao">
+      <div class="solution-reveal-title">🔒 SOLUÇÃO BLOQUEADA</div>
+      <div class="solution-reveal-text">
+        A solução oficial só pode ser revelada após você formalizar sua acusação.
+        <br><br>
+        Se preferir, pode revelar a solução agora, mas sua pontuação será zerada.
+      </div>
+      <button class="btn btn-secondary" style="margin-top: 1rem;" onclick="revealSolution('capao')">
+        🔓 REVELAR SOLUÇÃO (ZERA PONTUAÇÃO)
+      </button>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: flex; justify-content: space-between; align-items: center;">
+      <a href="../index.html" class="btn btn-secondary">
+        ← VOLTAR À CENTRAL
+      </a>
+      <div class="score-display">
+        <div class="score-display-label">PONTUAÇÃO ATUAL</div>
+        <div class="score-display-value" id="score-capao">1000</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vila das Camélias | True Crime Investigações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#casos">Casos</a></li>
+      <li><a href="#evidencias">Evidências</a></li>
+      <li><a href="#acusacao">Acusação</a></li>
+    </ul>
+  </nav>
+
+  <div class="case-page">
+    <header class="case-header">
+      <div class="case-header-content">
+        <div class="case-header-top">
+          <span class="case-header-badge active">CASO ATIVO</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold);">CAMELIAS-391</span>
+        </div>
+        <h1 class="case-header-title">Vila das Camélias</h1>
+        <div class="case-header-meta">
+          <span>🔒 Código: CAMELIAS-391</span>
+          <span>📊 Dificuldade: Fácil</span>
+          <span>📋 Evidências: 8</span>
+          <span>🏆 Pontuação Máxima: 1000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="case-progress">
+      <div class="progress-bar">
+        <div class="progress-step completed"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="progress-labels">
+        <span>Briefing</span>
+        <span>Evidências</span>
+        <span>Pistas</span>
+        <span>Acusação</span>
+        <span>Solução</span>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-briefing">📋 BRIEFING</button>
+        <button class="tab-btn" data-tab="tab-evidence">🔬 EVIDÊNCIAS</button>
+        <button class="tab-btn" data-tab="tab-timeline">⏱️ CRONOLOGIA</button>
+        <button class="tab-btn" data-tab="tab-suspects">👤 SUSPEITOS</button>
+        <button class="tab-btn" data-tab="tab-hints">💡 PISTAS</button>
+        <button class="tab-btn" data-tab="tab-accusation">⚖️ ACUSAÇÃO</button>
+        <button class="tab-btn" data-tab="tab-solution">🔓 SOLUÇÃO</button>
+      </div>
+
+      <div id="tab-briefing" class="tab-panel active">
+        <div class="case-file">
+          <div class="case-file-header">
+            <h2>Dossiê Forense Técnico</h2>
+            <div class="meta">CLASSIFICADO • TRUE CRIME INVESTIGAÇÕES</div>
+          </div>
+          <div class="case-file-section">
+            
+      <p><strong>RESUMO DO CASO:</strong> Morte aparentemente natural de Yolanda Bittencourt Castro, 74 anos, matriarca da família Bittencourt. Inicialmente atribuída a crise de hipoglicemia. Laudo toxicológico revelou administração de insulina exógena em dose maciça.</p>
+
+      <p><strong>VÍTIMA:</strong> Yolanda Bittencourt Castro, 74 anos, matriarca. Diabética tipo 2 insulino-dependente há 12 anos.</p>
+
+      <p><strong>CENA DO CRIME:</strong> Quarto principal da residência "Vila das Camélias", Alto de Pinheiros, São Paulo.</p>
+
+      <p><strong>DINÂMICA:</strong> A caneta de insulina inteligente registrou aplicação de 32 UI às 21h50min (prescrição: 8 UI). O log do aplicativo mostrou disparo pelo celular pareado de Renata. Marca de punção atípica na região abdominal — a vítima sempre se aplicava na coxa.</p>
+
+      <p><strong>EVIDÊNCIAS CHAVE:</strong> Impressão digital de Renata no botão da caneta (13 pontos AFIS). Log do aplicativo: sincronização de 54 segundos pelo celular de Renata. Insulina elevada com peptídeo-C suprimido (assinatura de insulina exógena). Auditoria: desvio de R$ 9,3 milhões.</p>
+
+      <p><strong>MOTIVAÇÃO:</strong> Yolanda convocou reunião do Conselho para destituir Renata da diretoria financeira e formalizar denúncia criminal. A auditoria confirmou desvio em contratos superfaturados com fornecedores de fachada.</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-evidence" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CADEIA DE CUSTÓDIA</span>
+          <h2 class="section-title">Evidências do Caso</h2>
+        </div>
+        <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💉</div>
+            <div>
+              <div class="evidence-card-title">Caneta de Insulina</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Dose de 32 UI às 21h50min (prescrição: 8 UI). Impressão digital de Renata no botão. Pareamento ao aplicativo dela.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📱</div>
+            <div>
+              <div class="evidence-card-title">Log do Aplicativo</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Sessão de sincronização de 54 segundos. Dispositivo pareado ao celular de Renata. Nunca havia sido usado para a mãe.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🩸</div>
+            <div>
+              <div class="evidence-card-title">Amostra Sanguínea</div>
+              <div class="evidence-card-type">Toxicológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Insulina extremamente elevada com peptídeo-C suprimido. Assinatura bioquímica de insulina exógena. Não espontânea.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📹</div>
+            <div>
+              <div class="evidence-card-title">Falha de CFTV</div>
+              <div class="evidence-card-type">Videomonitoramento</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Câmeras internas falharam das 21h40 às 22h20. Câmera externa da varanda permaneceu ativa. Renata não aparece na filmagem externa.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📄</div>
+            <div>
+              <div class="evidence-card-title">Rascunho da Pauta</div>
+              <div class="evidence-card-type">Documentoscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Anotação manuscrita da vítima: "chamar Dra. Helena de manhã — provas da Renata comigo". Grafotécnica confirmada (91%).</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📊</div>
+            <div>
+              <div class="evidence-card-title">Auditoria Societária</div>
+              <div class="evidence-card-type">Contábil</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Desvio de R$ 9,3 milhões em contratos superfaturados. Fornecedores de fachada controlados por Renata. E-mail à vítima 4 dias antes.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📞</div>
+            <div>
+              <div class="evidence-card-title">Registro de Chamadas</div>
+              <div class="evidence-card-type">Telefônica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Rodrigo ao telefone com corretor de apostas das 21h35 às 22h22. Álibi corroborado. Excluído como suspeito.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📍</div>
+            <div>
+              <div class="evidence-card-title">Marca de Punção</div>
+              <div class="evidence-card-type">Necroscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Região abdominal, incompatível com protocolo de autoaplicação da vítima (coxa). Ângulo indica aplicação por terceiro.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="tab-timeline" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">LINHA DO TEMPO</span>
+          <h2 class="section-title">Cronologia dos Eventos</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item"><div class="timeline-time">12/07 • 19h30</div><div class="timeline-content">Jantar em família na sala de jantar</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 20h50</div><div class="timeline-content">Família permanece na sala de TV</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 21h20</div><div class="timeline-content">Camila e Fábio vão para a varanda dos fundos</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 21h35</div><div class="timeline-content">Rodrigo faz ligação para corretor de apostas</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">12/07 • 21h40-22h15</div><div class="timeline-content">Janela toxicológica. Renata sobe para o quarto da mãe</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">12/07 • 21h50</div><div class="timeline-content">Disparo da dose: 32 UI (registro na caneta inteligente)</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 22h05</div><div class="timeline-content">Renata desce do quarto da mãe, pálida e com pressa</div></div>
+          <div class="timeline-item"><div class="timeline-time">13/07 • 06h10</div><div class="timeline-content">Sebastião encontra Yolanda caída ao lado da cama. Óbito.</div></div>
+        
+        </div>
+      </div>
+
+      <div id="tab-suspects" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">PERFILAMENTO CRIMINAL</span>
+          <h2 class="section-title">Suspeitos e Envolvidos</h2>
+        </div>
+        <div class="suspects-grid">
+          
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">R</div>
+            <div class="suspect-card-info">
+              <h4>Renata Bittencourt Salgueiro</h4>
+              <div class="role">Filha / Diretora Financeira</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Evitar destituição e prisão</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digital na caneta, log do app, auditoria de R$ 9,3mi</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">R</div>
+            <div class="suspect-card-info">
+              <h4>Rodrigo Bittencourt Castro</h4>
+              <div class="role">Filho do Meio</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dívidas</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Ao telefone com corretor de apostas</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">C</div>
+            <div class="suspect-card-info">
+              <h4>Camila Bittencourt Vasques</h4>
+              <div class="role">Filha Caçula</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Nenhum</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Na varanda com o marido (câmera ativa)</p>
+            <span class="suspect-card-tag alibi">ÁLIBI CORROBORADO</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">F</div>
+            <div class="suspect-card-info">
+              <h4>Fábio Duarte Peixoto</h4>
+              <div class="role">Genro</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Nenhum</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Na varanda com a esposa (câmera ativa)</p>
+            <span class="suspect-card-tag alibi">ÁLIBI CORROBORADO</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="tab-hints" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">SISTEMA DE APOIO</span>
+          <h2 class="section-title">Pistas Graduais</h2>
+          <p class="section-subtitle">
+            Use com moderação. Cada pista revelada reduz sua pontuação final.
+          </p>
+        </div>
+        <div class="hint-container">
+          <div class="hint-header">
+            <div class="hint-header-icon">💡</div>
+            <div class="hint-header-title">Sistema de Pistas</div>
+          </div>
+          <div class="hint-levels">
+            
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 1 — DIRECIONAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-camelias-1" onclick="revealHint('camelias', 1)">
+              REVELAR (-50 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-camelias-1">
+            A vítima morreu de overdose de insulina exógena. A caneta inteligente registrou a dose. Quem tinha o aplicativo pareado?
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 2 — APONTAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-camelias-2" onclick="revealHint('camelias', 2)">
+              REVELAR (-100 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-camelias-2">
+            A impressão digital de Renata foi encontrada no botão da caneta. O log mostrou acesso pelo aplicativo dela às 21h50min por 54 segundos.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 3 — REVELAÇÃO</span>
+            <button class="hint-level-btn" id="hint-btn-camelias-3" onclick="revealHint('camelias', 3)">
+              REVELAR (-150 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-camelias-3">
+            A auditoria confirmou desvio de R$ 9,3 milhões. A vítima ia destituir Renata do cargo no dia seguinte. Motivo + Oportunidade + Meio = Autoria.
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-accusation" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">FORMALIZAÇÃO</span>
+          <h2 class="section-title">Formule sua Acusação</h2>
+          <p class="section-subtitle">
+            Seja preciso. A justiça exige provas, não suposições.
+          </p>
+        </div>
+        
+    <div class="accusation-form">
+      <div class="form-group">
+        <label class="form-label">👤 AUTOR DO CRIME</label>
+        <select class="form-select" id="accusation-suspect-camelias">
+          <option value="">Selecione o suspeito...</option>
+          <option value="Renata Bittencourt Salgueiro">Renata Bittencourt Salgueiro</option><option value="Rodrigo Bittencourt Castro">Rodrigo Bittencourt Castro</option><option value="Camila Bittencourt Vasques">Camila Bittencourt Vasques</option><option value="Fábio Duarte Peixoto">Fábio Duarte Peixoto</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🎯 MOTIVO</label>
+        <input type="text" class="form-input" id="accusation-motive-camelias" placeholder="Qual foi o motivo do crime?">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📋 EVIDÊNCIAS QUE SUSTENTAM A ACUSAÇÃO</label>
+        <textarea class="form-textarea" id="accusation-evidence-camelias" placeholder="Liste as evidências que comprovam sua tese..."></textarea>
+      </div>
+      <button class="btn btn-danger" style="width: 100%;" onclick="submitAccusation('camelias')">
+        ⚖️ FORMALIZAR ACUSAÇÃO
+      </button>
+    </div>
+    
+      </div>
+
+      <div id="tab-solution" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CONFIDENCIAL</span>
+          <h2 class="section-title">Solução Oficial</h2>
+        </div>
+        
+    <div class="solution-reveal locked" id="solution-camelias">
+      <div class="solution-reveal-title">🔒 SOLUÇÃO BLOQUEADA</div>
+      <div class="solution-reveal-text">
+        A solução oficial só pode ser revelada após você formalizar sua acusação.
+        <br><br>
+        Se preferir, pode revelar a solução agora, mas sua pontuação será zerada.
+      </div>
+      <button class="btn btn-secondary" style="margin-top: 1rem;" onclick="revealSolution('camelias')">
+        🔓 REVELAR SOLUÇÃO (ZERA PONTUAÇÃO)
+      </button>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: flex; justify-content: space-between; align-items: center;">
+      <a href="../index.html" class="btn btn-secondary">
+        ← VOLTAR À CENTRAL
+      </a>
+      <div class="score-display">
+        <div class="score-display-label">PONTUAÇÃO ATUAL</div>
+        <div class="score-display-value" id="score-camelias">1000</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

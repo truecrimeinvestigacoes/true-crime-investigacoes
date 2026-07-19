@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operação Tanino | True Crime Investigações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#casos">Casos</a></li>
+      <li><a href="#evidencias">Evidências</a></li>
+      <li><a href="#acusacao">Acusação</a></li>
+    </ul>
+  </nav>
+
+  <div class="case-page">
+    <header class="case-header">
+      <div class="case-header-content">
+        <div class="case-header-top">
+          <span class="case-header-badge active">CASO ATIVO</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold);">TANINO-203</span>
+        </div>
+        <h1 class="case-header-title">Operação Tanino</h1>
+        <div class="case-header-meta">
+          <span>🔒 Código: TANINO-203</span>
+          <span>📊 Dificuldade: Médio</span>
+          <span>📋 Evidências: 6</span>
+          <span>🏆 Pontuação Máxima: 1000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="case-progress">
+      <div class="progress-bar">
+        <div class="progress-step completed"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="progress-labels">
+        <span>Briefing</span>
+        <span>Evidências</span>
+        <span>Pistas</span>
+        <span>Acusação</span>
+        <span>Solução</span>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-briefing">📋 BRIEFING</button>
+        <button class="tab-btn" data-tab="tab-evidence">🔬 EVIDÊNCIAS</button>
+        <button class="tab-btn" data-tab="tab-timeline">⏱️ CRONOLOGIA</button>
+        <button class="tab-btn" data-tab="tab-suspects">👤 SUSPEITOS</button>
+        <button class="tab-btn" data-tab="tab-hints">💡 PISTAS</button>
+        <button class="tab-btn" data-tab="tab-accusation">⚖️ ACUSAÇÃO</button>
+        <button class="tab-btn" data-tab="tab-solution">🔓 SOLUÇÃO</button>
+      </div>
+
+      <div id="tab-briefing" class="tab-panel active">
+        <div class="case-file">
+          <div class="case-file-header">
+            <h2>Dossiê Forense Técnico</h2>
+            <div class="meta">CLASSIFICADO • TRUE CRIME INVESTIGAÇÕES</div>
+          </div>
+          <div class="case-file-section">
+            
+      <p><strong>RESUMO DO CASO:</strong> Homicídio qualificado por envenenamento de Eduardo Villar Castanheira, 68 anos, patriarca e fundador da Vinícola Cordilheira Alta. Envenenado com aconitina no vinho do Porto durante reunião familiar.</p>
+
+      <p><strong>VÍTIMA:</strong> Eduardo Villar Castanheira, 68 anos, fundador e controlador majoritário da Vinícola Cordilheira Alta.</p>
+
+      <p><strong>CENA DO CRIME:</strong> Biblioteca particular da residência principal, Vinícola Cordilheira Alta, Vale dos Vinhedos.</p>
+
+      <p><strong>DINÂMICA:</strong> Eduardo entrou sozinho na biblioteca às 22h48min com o decantador de cristal. Às 23h15min, a governanta ouviu barulho de vidro. A porta estava trancada por dentro. O segurança arrombou às 23h22min, encontrando o patriarca sem sinais vitais.</p>
+
+      <p><strong>EVIDÊNCIAS CHAVE:</strong> Aconitina no sangue com assinatura química exclusiva do canteiro de acônito do jardim. Digitais de Rogério na rolha do decantador (13 pontos AFIS), no frasco conta-gotas e na tesoura de poda. Buscas no celular: "aconitina dose letal sem sabor".</p>
+
+      <p><strong>MOTIVAÇÃO:</strong> Eduardo anunciou na reunião das 21h que uma auditoria encontrou "irregularidades graves" nas contas. A auditoria confirmou desvio de R$ 2,3 milhões rastreados até contas de Rogério. O relatório seria apresentado 3 dias depois.</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-evidence" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CADEIA DE CUSTÓDIA</span>
+          <h2 class="section-title">Evidências do Caso</h2>
+        </div>
+        <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🍷</div>
+            <div>
+              <div class="evidence-card-title">Decantador de Cristal</div>
+              <div class="evidence-card-type">Toxicológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Resíduo líquido com aconitina 340x superior ao restante da garrafa. Adulteração pontual da dose servida.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📜</div>
+            <div>
+              <div class="evidence-card-title">Rolha de Cristal</div>
+              <div class="evidence-card-type">Papiloscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Recuperada sob a estante. Presilha interna do polegar direito de Rogério. 13 pontos de coincidência no AFIS.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🔬</div>
+            <div>
+              <div class="evidence-card-title">Frasco Conta-Gotas</div>
+              <div class="evidence-card-type">Papiloscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Oculto no forro do banco do veículo. Verticilo do indicador direito. 11 pontos de coincidência.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">✂️</div>
+            <div>
+              <div class="evidence-card-title">Tesoura de Poda</div>
+              <div class="evidence-card-type">Papiloscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Encontrada na estufa. Resíduo de seiva compatível com acônito. Presilha interna do polegar direito (parcial).</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🌿</div>
+            <div>
+              <div class="evidence-card-title">Canteiro de Acônito</div>
+              <div class="evidence-card-type">Botânica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Aconitum napellus no jardim. Assinatura química exclusiva do solo calcário local. Isômeros raros idênticos à amostra gástrica.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📱</div>
+            <div>
+              <div class="evidence-card-title">Celular do Suspeito</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Buscas deletadas: "aconitina dose letal sem sabor". Mensagens criptografadas com "R.N." sobre extração da planta.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="tab-timeline" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">LINHA DO TEMPO</span>
+          <h2 class="section-title">Cronologia dos Eventos</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item"><div class="timeline-time">08/08 • 21h00</div><div class="timeline-content">Reunião familiar. Eduardo anuncia auditoria e mudanças no testamento</div></div>
+          <div class="timeline-item"><div class="timeline-time">08/08 • 21h15</div><div class="timeline-content">Rogério empalidece e sai da reunião alegando dor de cabeça</div></div>
+          <div class="timeline-item"><div class="timeline-time">08/08 • 22h30</div><div class="timeline-content">Rogério visto saindo da estufa de ferramentas em direção à casa</div></div>
+          <div class="timeline-item"><div class="timeline-time">08/08 • 22h48</div><div class="timeline-content">Eduardo entra sozinho na biblioteca com o decantador</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">08/08 • 22h50-23h05</div><div class="timeline-content">Janela de ingestão da dose letal de aconitina</div></div>
+          <div class="timeline-item"><div class="timeline-time">08/08 • 23h15</div><div class="timeline-content">Barulho de vidro. Governanta tenta abrir a porta trancada</div></div>
+          <div class="timeline-item"><div class="timeline-time">08/08 • 23h22</div><div class="timeline-content">Segurança arromba a porta. Eduardo sem sinais vitais.</div></div>
+        
+        </div>
+      </div>
+
+      <div id="tab-suspects" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">PERFILAMENTO CRIMINAL</span>
+          <h2 class="section-title">Suspeitos e Envolvidos</h2>
+        </div>
+        <div class="suspects-grid">
+          
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">R</div>
+            <div class="suspect-card-info">
+              <h4>Rogério Villar Castanheira</h4>
+              <div class="role">Sobrinho / Administrador Financeiro</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Ocultar desvio de R$ 2,3 milhões</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digitais na rolha, frasco e tesoura. Buscas no celular. Auditoria.</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="tab-hints" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">SISTEMA DE APOIO</span>
+          <h2 class="section-title">Pistas Graduais</h2>
+          <p class="section-subtitle">
+            Use com moderação. Cada pista revelada reduz sua pontuação final.
+          </p>
+        </div>
+        <div class="hint-container">
+          <div class="hint-header">
+            <div class="hint-header-icon">💡</div>
+            <div class="hint-header-title">Sistema de Pistas</div>
+          </div>
+          <div class="hint-levels">
+            
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 1 — DIRECIONAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-tanino-1" onclick="revealHint('tanino', 1)">
+              REVELAR (-50 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-tanino-1">
+            A vítima foi envenenada com aconitina no vinho do Porto. A planta crescia no jardim da propriedade. Quem conhecia o hábito do decantador pessoal?
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 2 — APONTAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-tanino-2" onclick="revealHint('tanino', 2)">
+              REVELAR (-100 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-tanino-2">
+            O sobrinho deixou digitais na rolha do decantador, no frasco conta-gotas e na tesoura de poda. O AFIS confirmou: Rogério Villar Castanheira.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 3 — REVELAÇÃO</span>
+            <button class="hint-level-btn" id="hint-btn-tanino-3" onclick="revealHint('tanino', 3)">
+              REVELAR (-150 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-tanino-3">
+            O celular do sobrinho continha buscas por "aconitina dose letal sem sabor". A auditoria encontrou desvio de R$ 2,3 milhões em contas dele.
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-accusation" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">FORMALIZAÇÃO</span>
+          <h2 class="section-title">Formule sua Acusação</h2>
+          <p class="section-subtitle">
+            Seja preciso. A justiça exige provas, não suposições.
+          </p>
+        </div>
+        
+    <div class="accusation-form">
+      <div class="form-group">
+        <label class="form-label">👤 AUTOR DO CRIME</label>
+        <select class="form-select" id="accusation-suspect-tanino">
+          <option value="">Selecione o suspeito...</option>
+          <option value="Rogério Villar Castanheira">Rogério Villar Castanheira</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🎯 MOTIVO</label>
+        <input type="text" class="form-input" id="accusation-motive-tanino" placeholder="Qual foi o motivo do crime?">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📋 EVIDÊNCIAS QUE SUSTENTAM A ACUSAÇÃO</label>
+        <textarea class="form-textarea" id="accusation-evidence-tanino" placeholder="Liste as evidências que comprovam sua tese..."></textarea>
+      </div>
+      <button class="btn btn-danger" style="width: 100%;" onclick="submitAccusation('tanino')">
+        ⚖️ FORMALIZAR ACUSAÇÃO
+      </button>
+    </div>
+    
+      </div>
+
+      <div id="tab-solution" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CONFIDENCIAL</span>
+          <h2 class="section-title">Solução Oficial</h2>
+        </div>
+        
+    <div class="solution-reveal locked" id="solution-tanino">
+      <div class="solution-reveal-title">🔒 SOLUÇÃO BLOQUEADA</div>
+      <div class="solution-reveal-text">
+        A solução oficial só pode ser revelada após você formalizar sua acusação.
+        <br><br>
+        Se preferir, pode revelar a solução agora, mas sua pontuação será zerada.
+      </div>
+      <button class="btn btn-secondary" style="margin-top: 1rem;" onclick="revealSolution('tanino')">
+        🔓 REVELAR SOLUÇÃO (ZERA PONTUAÇÃO)
+      </button>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: flex; justify-content: space-between; align-items: center;">
+      <a href="../index.html" class="btn btn-secondary">
+        ← VOLTAR À CENTRAL
+      </a>
+      <div class="score-display">
+        <div class="score-display-label">PONTUAÇÃO ATUAL</div>
+        <div class="score-display-value" id="score-tanino">1000</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

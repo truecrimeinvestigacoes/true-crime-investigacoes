@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>True Crime Investigações | Central de Casos</title>
+  <meta name="description" content="Dossiês criminais imersivos. Analise evidências, confronte álibis e apresente sua acusação.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <!-- Efeitos Visuais -->
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Inicializando Sistema...</div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#casos">Casos</a></li>
+      <li><a href="#como-jogar">Como Jogar</a></li>
+      <li><a href="#acesso">Acesso</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge animate-fade-in">
+      CENTRAL DE OPERAÇÕES • ACESSO AUTORIZADO
+    </div>
+    <h1 class="hero-title animate-fade-in animate-delay-1">
+      ENCONTRE A<br><span class="highlight">VERDADE</span>
+    </h1>
+    <p class="hero-subtitle animate-fade-in animate-delay-2">
+      Dossiês criminais imersivos para você analisar evidências, confrontar álibis e apresentar sua acusação. Cada caso é uma história real... de ficção.
+    </p>
+    <div class="hero-stats animate-fade-in animate-delay-3">
+      <div class="hero-stat">
+        <span class="hero-stat-number">06</span>
+        <span class="hero-stat-label">Casos Disponíveis</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">40+</span>
+        <span class="hero-stat-label">Evidências</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-number">100%</span>
+        <span class="hero-stat-label">Ficção</span>
+      </div>
+    </div>
+    <div class="hero-cta animate-fade-in animate-delay-4">
+      <a href="#casos" class="btn btn-primary">
+        <span>📂</span> ACESSAR ARQUIVOS
+      </a>
+      <a href="#como-jogar" class="btn btn-secondary">
+        <span>📖</span> COMO JOGAR
+      </a>
+    </div>
+  </section>
+
+  <!-- Cases Section -->
+  <section id="casos" class="section">
+    <div class="section-header">
+      <span class="section-tag">ARQUIVO CENTRAL</span>
+      <h2 class="section-title">Casos Disponíveis</h2>
+      <p class="section-subtitle">
+        Selecione um dossiê. Cada investigação possui progresso salvo, três etapas, pontuação, pistas graduais e solução protegida.
+      </p>
+    </div>
+
+    <div class="cases-grid">
+      <!-- Caso 1: Metalurgia -->
+      <div class="case-card animate-fade-in" id="case-card-metalurgia">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #001</div>
+          <h3 class="case-card-title">Operação Metalurgia</h3>
+          <span class="case-card-code">METAL-441</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Sequestro e execução de Arthur Brandão Neto, herdeiro do Grupo Brandão. O corpo foi destruído em um forno de indução industrial a 1.100°C. Investigue o cativeiro, os vestígios térmicos e a trilha digital dos sequestradores.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>🔥</span> Difícil
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 8 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 60-90 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('metalurgia', () => window.location.href='cases/metalurgia.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+
+      <!-- Caso 2: Genesis Pharma -->
+      <div class="case-card animate-fade-in animate-delay-1" id="case-card-genesis">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #002</div>
+          <h3 class="case-card-title">Gênesis Pharma</h3>
+          <span class="case-card-code">GENESIS-112</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Homicídio da Dra. Helena Vance, pesquisadora-chefe de oncologia molecular. Envenenada com Azida de Sódio no café. Patente biotecnológica roubada. Investigue o laboratório NB3, o sniffer USB e a trilha de criptoativos.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>⚗️</span> Médio
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 6 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 45-60 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('genesis', () => window.location.href='cases/genesis.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+
+      <!-- Caso 3: Tanino -->
+      <div class="case-card animate-fade-in animate-delay-2" id="case-card-tanino">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #003</div>
+          <h3 class="case-card-title">Operação Tanino</h3>
+          <span class="case-card-code">TANINO-203</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Envenenamento de Eduardo Villar Castanheira, patriarca da Vinícola Cordilheira Alta. Aconitina no vinho do Porto. Investigue o jardim de acônito, a rolha do decantador e a auditoria financeira da família.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>🍷</span> Médio
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 6 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 45-60 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('tanino', () => window.location.href='cases/tanino.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+
+      <!-- Caso 4: Vila das Camélias -->
+      <div class="case-card animate-fade-in" id="case-card-camelias">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #004</div>
+          <h3 class="case-card-title">Vila das Camélias</h3>
+          <span class="case-card-code">CAMELIAS-391</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Morte aparentemente natural de Yolanda Bittencourt Castro. Insulina exógena em dose letal. A caneta inteligente registrou tudo. Investigue a falha do CFTV, o log do aplicativo e a auditoria societária.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>💉</span> Fácil
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 8 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 30-45 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('camelias', () => window.location.href='cases/camelias.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+
+      <!-- Caso 5: Solar dos Ipês -->
+      <div class="case-card animate-fade-in animate-delay-1" id="case-card-ipes">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #005</div>
+          <h3 class="case-card-title">Solar dos Ipês</h3>
+          <span class="case-card-code">IPES-275</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Morte inicialmente atribuída a parada cardíaca de Aurélio Bittencourt Ramalho. Digoxina 4x acima do terapêutico. Investigue o dosador eletrônico, a falha do CFTV e o novo testamento.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>💊</span> Fácil
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 8 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 30-45 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('ipes', () => window.location.href='cases/ipes.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+
+      <!-- Caso 6: Capão Alto -->
+      <div class="case-card animate-fade-in animate-delay-2" id="case-card-capao">
+        <div class="case-card-header">
+          <div class="case-card-status"></div>
+          <div class="case-card-number">CASO #006</div>
+          <h3 class="case-card-title">Protocolo Capão Alto</h3>
+          <span class="case-card-code">CAPAO-589</span>
+        </div>
+        <div class="case-card-body">
+          <p class="case-card-desc">
+            Sequestro e dissolução de Rafael Kim Andrade Vasconcelos, CEO da NeoPay Holdings. Hidrólise alcalina em tanque industrial. Investigue a rede mesh offline, o roteador móvel e a carteira de criptoativos.
+          </p>
+          <div class="case-card-meta">
+            <div class="case-card-meta-item">
+              <span>🧪</span> Difícil
+            </div>
+            <div class="case-card-meta-item">
+              <span>📋</span> 6 Evidências
+            </div>
+            <div class="case-card-meta-item">
+              <span>⏱️</span> 60-90 min
+            </div>
+          </div>
+        </div>
+        <div class="case-card-footer">
+          <button class="btn btn-locked case-action-btn" onclick="PasswordModal.open('capao', () => window.location.href='cases/capao.html')">
+            🔒 BLOQUEADO
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Play Section -->
+  <section id="como-jogar" class="section">
+    <div class="section-header">
+      <span class="section-tag">PROTOCOLO DE CAMPO</span>
+      <h2 class="section-title">Você Conduz a Investigação</h2>
+      <p class="section-subtitle">
+        Siga o protocolo padrão de investigação criminal. Cada etapa é crucial para chegar à verdade.
+      </p>
+    </div>
+
+    <div class="steps-container">
+      <div class="step-card animate-fade-in">
+        <div class="step-number">01</div>
+        <h3 class="step-title">Receba o Briefing</h3>
+        <p class="step-desc">
+          Conheça a cena do crime, a vítima e o contexto. Leia atentamente o dossiê forense. Não pule nenhum detalhe.
+        </p>
+      </div>
+      <div class="step-card animate-fade-in animate-delay-1">
+        <div class="step-number">02</div>
+        <h3 class="step-title">Analise as Provas</h3>
+        <p class="step-desc">
+          Cruze mapas, perfis dos envolvidos, laudos periciais e cronologia dos eventos. Cada evidência conta uma parte da história.
+        </p>
+      </div>
+      <div class="step-card animate-fade-in animate-delay-2">
+        <div class="step-number">03</div>
+        <h3 class="step-title">Solicite Pistas</h3>
+        <p class="step-desc">
+          Se estiver travado, use o sistema de pistas graduais. Cada pista revelada reduz sua pontuação final. Use com sabedoria.
+        </p>
+      </div>
+      <div class="step-card animate-fade-in animate-delay-3">
+        <div class="step-number">04</div>
+        <h3 class="step-title">Formule a Acusação</h3>
+        <p class="step-desc">
+          Registre o autor, o motivo e as evidências que sustentam sua tese. Seja preciso. A justiça exige provas, não suposições.
+        </p>
+      </div>
+      <div class="step-card animate-fade-in animate-delay-4">
+        <div class="step-number">05</div>
+        <h3 class="step-title">Abra a Solução</h3>
+        <p class="step-desc">
+          Confirme sua acusação e confronte sua tese com a solução oficial. Se acertou, parabéns, detetive. Se errou, reavalie.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Section -->
+  <section id="acesso" class="section access-section">
+    <div class="section-header">
+      <span class="section-tag">ACESSO DO COMPRADOR</span>
+      <h2 class="section-title">Do Produto para a Investigação</h2>
+      <p class="section-subtitle">
+        O comprador recebe dentro da embalagem um cartão com QR Code e um código individual do caso. Nenhum aplicativo precisa ser instalado.
+      </p>
+    </div>
+
+    <div class="access-grid">
+      <div class="access-steps">
+        <div class="access-step">
+          <div class="access-step-number">1</div>
+          <div class="access-step-content">
+            <h4>ESCANEIE</h4>
+            <p>Abra a câmera do celular e aponte para o QR Code no cartão do caso.</p>
+          </div>
+        </div>
+        <div class="access-step">
+          <div class="access-step-number">2</div>
+          <div class="access-step-content">
+            <h4>ACESSE</h4>
+            <p>O portal abrirá diretamente no navegador. Não precisa instalar nada.</p>
+          </div>
+        </div>
+        <div class="access-step">
+          <div class="access-step-number">3</div>
+          <div class="access-step-content">
+            <h4>DESBLOQUEIE</h4>
+            <p>Digite o código impresso no cartão do produto para liberar o dossiê.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <div style="background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: 12px; padding: 2rem; display: inline-block;">
+          <div style="width: 200px; height: 200px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <div style="text-align: center; color: #333;">
+              <div style="font-size: 3rem; margin-bottom: 0.5rem;">📱</div>
+              <div style="font-size: 0.75rem; font-family: monospace;">QR CODE</div>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">
+            Aponte a câmera e toque no link
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">TRUE CRIME INVESTIGAÇÕES</div>
+    <p class="footer-text">
+      Dossiês criminais imersivos para mentes curiosas.
+    </p>
+    <p class="footer-disclaimer">
+      ⚠️ TODOS OS CASOS SÃO 100% FICÇÃO. Qualquer semelhança com pessoas, eventos ou locais reais é mera coincidência. 
+      Este conteúdo é destinado exclusivamente a fins de entretenimento e não representa procedimentos reais de investigação criminal.
+    </p>
+  </footer>
+
+  <!-- Password Modal -->
+  <div id="passwordModal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-icon">🔐</div>
+      <h3 class="modal-title">Acesso Restrito</h3>
+      <p class="modal-subtitle">Digite o código do caso para desbloquear o dossiê</p>
+      <input type="text" id="passwordInput" class="modal-input" placeholder="EX: METAL-441" autocomplete="off">
+      <div id="passwordError" class="modal-error"></div>
+      <div class="modal-buttons">
+        <button class="btn btn-secondary" onclick="PasswordModal.close()">CANCELAR</button>
+        <button class="btn btn-primary" onclick="PasswordModal.verify()">DESBLOQUEAR</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

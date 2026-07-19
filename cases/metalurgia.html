@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operação Metalurgia | True Crime Investigações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#casos">Casos</a></li>
+      <li><a href="#evidencias">Evidências</a></li>
+      <li><a href="#acusacao">Acusação</a></li>
+    </ul>
+  </nav>
+
+  <div class="case-page">
+    <header class="case-header">
+      <div class="case-header-content">
+        <div class="case-header-top">
+          <span class="case-header-badge active">CASO ATIVO</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold);">METAL-441</span>
+        </div>
+        <h1 class="case-header-title">Operação Metalurgia</h1>
+        <div class="case-header-meta">
+          <span>🔒 Código: METAL-441</span>
+          <span>📊 Dificuldade: Difícil</span>
+          <span>📋 Evidências: 8</span>
+          <span>🏆 Pontuação Máxima: 1000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="case-progress">
+      <div class="progress-bar">
+        <div class="progress-step completed"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="progress-labels">
+        <span>Briefing</span>
+        <span>Evidências</span>
+        <span>Pistas</span>
+        <span>Acusação</span>
+        <span>Solução</span>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-briefing">📋 BRIEFING</button>
+        <button class="tab-btn" data-tab="tab-evidence">🔬 EVIDÊNCIAS</button>
+        <button class="tab-btn" data-tab="tab-timeline">⏱️ CRONOLOGIA</button>
+        <button class="tab-btn" data-tab="tab-suspects">👤 SUSPEITOS</button>
+        <button class="tab-btn" data-tab="tab-hints">💡 PISTAS</button>
+        <button class="tab-btn" data-tab="tab-accusation">⚖️ ACUSAÇÃO</button>
+        <button class="tab-btn" data-tab="tab-solution">🔓 SOLUÇÃO</button>
+      </div>
+
+      <div id="tab-briefing" class="tab-panel active">
+        <div class="case-file">
+          <div class="case-file-header">
+            <h2>Dossiê Forense Técnico</h2>
+            <div class="meta">CLASSIFICADO • TRUE CRIME INVESTIGAÇÕES</div>
+          </div>
+          <div class="case-file-section">
+            
+      <p><strong>RESUMO DO CASO:</strong> Arthur Brandão Neto, 22 anos, estudante e herdeiro do Grupo Brandão de Transportes, foi sequestrado há 8 dias para extorsão financeira. Foi mantido em cativeiro em uma antiga fundição desativada e executado com traumatismo craniano antes de ter o corpo queimado no forno de indução para ocultação de evidências.</p>
+
+      <p><strong>VÍTIMA:</strong> Arthur Brandão Neto, 22 anos, estudante e herdeiro do Grupo Brandão de Transportes.</p>
+
+      <p><strong>CENA DO CRIME:</strong> Antiga fundição "Metais do Vale", Estrada da Pedreira, s/n, Distrito Industrial Norte. Forno de indução nº 4 adaptado ilegalmente com gerador a diesel móvel.</p>
+
+      <p><strong>DINÂMICA:</strong> A vítima sofreu traumatismo cranioencefálico letal em decúbito dorsal antes de ser introduzida no forno já sem vida. O forno atingiu 1.100°C por 140 minutos. O gerador travou por falta de combustível às 03h12min da madrugada do dia 12/07/2026.</p>
+
+      <p><strong>CATIVEIRO:</strong> Sala de máquinas subterrânea de 2x3 metros. Acesso por porta de ferro trancada com corrente e cadeado. Colchão de espuma sem lençóis. Embalagens vazias de cloridrato de cetamina (anestésico veterinário) e seringas usadas. Ranhuras profundas na parede indicam tentativas de fuga.</p>
+
+      <p><strong>EVIDÊNCIAS CHAVE:</strong> Digitais de Marcos Aurélio da Silva nos frascos de cetamina (13 pontos AFIS), no galão de diesel e no painel do gerador. Mensagem deletada: "Apaga o garoto logo e liga o forno. Não pode sobrar nada de DNA."</p>
+
+      <p><strong>MOTIVAÇÃO:</strong> Extorsão de R$ 2 milhões em criptoativos. A mochila com cédulas falsificadas (iscas policiais) indica que os sequestradores executaram a vítima ao perceberem o cerco policial.</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-evidence" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CADEIA DE CUSTÓDIA</span>
+          <h2 class="section-title">Evidências do Caso</h2>
+        </div>
+        <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🔥</div>
+            <div>
+              <div class="evidence-card-title">Forno de Indução nº 4</div>
+              <div class="evidence-card-type">Cena do Crime</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Temperatura de 1.100°C por 140 minutos. Fragmentos ósseos calcinados e dentes humanos recuperados no leito refratário.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💉</div>
+            <div>
+              <div class="evidence-card-title">Frascos de Cetamina</div>
+              <div class="evidence-card-type">Farmacológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Quatro frascos vazios de Cloridrato de Cetamina (50mg/ml) com ranhuras de seringa. Digitais de Marcos Aurélio reveladas por cianoacrilato.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📱</div>
+            <div>
+              <div class="evidence-card-title">Celular do Vigia</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Recuperado no poço do elevador. Conversas deletadas contêm a ordem: "Apaga o garoto logo e liga o forno".</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🚗</div>
+            <div>
+              <div class="evidence-card-title">Sistema Veicular</div>
+              <div class="evidence-card-type">Rastreamento</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Logs de geolocalização do utilitário clonado. Trajeto do sequestro ao cativeiro. Portas abertas às 00h42min.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">⛽</div>
+            <div>
+              <div class="evidence-card-title">Galão de Diesel</div>
+              <div class="evidence-card-type">Física</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>5 litros com traços de óleo diesel e solvente clorado. Impressões digitais parciais na lateral por pó magnético.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🦴</div>
+            <div>
+              <div class="evidence-card-title">Fragmentos Ósseos</div>
+              <div class="evidence-card-type">Antropológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Fêmur distal, úmero proximal e 4 dentes. Identificação por odontologia e DNA mitocondrial. Implante de titânio confirmado.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🔧</div>
+            <div>
+              <div class="evidence-card-title">Maçarico e Ferramentas</div>
+              <div class="evidence-card-type">Instrumental</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Estojo metálico com maçarico portátil e ferramentas odontológicas. Vestígios de proteínas ósseas e digital na alça.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💰</div>
+            <div>
+              <div class="evidence-card-title">Mochila com Dinheiro</div>
+              <div class="evidence-card-type">Financeira</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Três pacotes de cédulas falsificadas (iscas policiais). Indica que sequestradores executaram vítima ao perceberem o cerco.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="tab-timeline" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">LINHA DO TEMPO</span>
+          <h2 class="section-title">Cronologia dos Eventos</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item"><div class="timeline-time">05/07</div><div class="timeline-content">Sequestro de Arthur Brandão Neto em frente à faculdade</div></div>
+          <div class="timeline-item"><div class="timeline-time">05-11/07</div><div class="timeline-content">Vítima mantida em cativeiro subterrâneo, sedada com cetamina</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">12/07 • 00h15</div><div class="timeline-content">Mensagem: "Apaga o garoto logo e liga o forno"</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 00h42</div><div class="timeline-content">Veículo chega à fundição. Abertura de portas registrada</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">12/07 • 00h45-03h10</div><div class="timeline-content">Queima no forno de indução nº 4 a 1.100°C por 140 minutos</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 03h12</div><div class="timeline-content">Gerador trava por falta de combustível</div></div>
+          <div class="timeline-item"><div class="timeline-time">12/07 • 03h15</div><div class="timeline-content">Fuga dos criminosos do local</div></div>
+          <div class="timeline-item"><div class="timeline-time">13/07 • 17h15</div><div class="timeline-content">Equipe pericial encontra o cenário do crime</div></div>
+        
+        </div>
+      </div>
+
+      <div id="tab-suspects" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">PERFILAMENTO CRIMINAL</span>
+          <h2 class="section-title">Suspeitos e Envolvidos</h2>
+        </div>
+        <div class="suspects-grid">
+          
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">M</div>
+            <div class="suspect-card-info">
+              <h4>Marcos Aurélio da Silva ("Alemão")</h4>
+              <div class="role">Executor de Campo</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dinheiro</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digitais nos frascos de cetamina, galão e painel do gerador</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">M</div>
+            <div class="suspect-card-info">
+              <h4>Mandante (Nome Omitido)</h4>
+              <div class="role">Mentor Intelectual</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Extorsão</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> ERB, compra do gerador, mensagens deletadas</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="tab-hints" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">SISTEMA DE APOIO</span>
+          <h2 class="section-title">Pistas Graduais</h2>
+          <p class="section-subtitle">
+            Use com moderação. Cada pista revelada reduz sua pontuação final.
+          </p>
+        </div>
+        <div class="hint-container">
+          <div class="hint-header">
+            <div class="hint-header-icon">💡</div>
+            <div class="hint-header-title">Sistema de Pistas</div>
+          </div>
+          <div class="hint-levels">
+            
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 1 — DIRECIONAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-metalurgia-1" onclick="revealHint('metalurgia', 1)">
+              REVELAR (-50 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-metalurgia-1">
+            A vítima foi sequestrada e mantida em cativeiro. O corpo foi destruído no forno de indução. Foque nos registros térmicos e digitais.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 2 — APONTAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-metalurgia-2" onclick="revealHint('metalurgia', 2)">
+              REVELAR (-100 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-metalurgia-2">
+            O executor deixou digitais nos frascos de cetamina e no galão de diesel. O sistema AFIS confirmou a identidade de Marcos Aurélio da Silva.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 3 — REVELAÇÃO</span>
+            <button class="hint-level-btn" id="hint-btn-metalurgia-3" onclick="revealHint('metalurgia', 3)">
+              REVELAR (-150 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-metalurgia-3">
+            O mandante adquiriu o gerador e diesel em dinheiro vivo. A triangulação de ERB e o vazamento de DNS do roteador móvel o ligam ao local.
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-accusation" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">FORMALIZAÇÃO</span>
+          <h2 class="section-title">Formule sua Acusação</h2>
+          <p class="section-subtitle">
+            Seja preciso. A justiça exige provas, não suposições.
+          </p>
+        </div>
+        
+    <div class="accusation-form">
+      <div class="form-group">
+        <label class="form-label">👤 AUTOR DO CRIME</label>
+        <select class="form-select" id="accusation-suspect-metalurgia">
+          <option value="">Selecione o suspeito...</option>
+          <option value="Marcos Aurélio da Silva ("Alemão")">Marcos Aurélio da Silva ("Alemão")</option><option value="Mandante (Nome Omitido)">Mandante (Nome Omitido)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🎯 MOTIVO</label>
+        <input type="text" class="form-input" id="accusation-motive-metalurgia" placeholder="Qual foi o motivo do crime?">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📋 EVIDÊNCIAS QUE SUSTENTAM A ACUSAÇÃO</label>
+        <textarea class="form-textarea" id="accusation-evidence-metalurgia" placeholder="Liste as evidências que comprovam sua tese..."></textarea>
+      </div>
+      <button class="btn btn-danger" style="width: 100%;" onclick="submitAccusation('metalurgia')">
+        ⚖️ FORMALIZAR ACUSAÇÃO
+      </button>
+    </div>
+    
+      </div>
+
+      <div id="tab-solution" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CONFIDENCIAL</span>
+          <h2 class="section-title">Solução Oficial</h2>
+        </div>
+        
+    <div class="solution-reveal locked" id="solution-metalurgia">
+      <div class="solution-reveal-title">🔒 SOLUÇÃO BLOQUEADA</div>
+      <div class="solution-reveal-text">
+        A solução oficial só pode ser revelada após você formalizar sua acusação.
+        <br><br>
+        Se preferir, pode revelar a solução agora, mas sua pontuação será zerada.
+      </div>
+      <button class="btn btn-secondary" style="margin-top: 1rem;" onclick="revealSolution('metalurgia')">
+        🔓 REVELAR SOLUÇÃO (ZERA PONTUAÇÃO)
+      </button>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: flex; justify-content: space-between; align-items: center;">
+      <a href="../index.html" class="btn btn-secondary">
+        ← VOLTAR À CENTRAL
+      </a>
+      <div class="score-display">
+        <div class="score-display-label">PONTUAÇÃO ATUAL</div>
+        <div class="score-display-value" id="score-metalurgia">1000</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

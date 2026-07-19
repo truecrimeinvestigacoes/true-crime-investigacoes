@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar dos Ipês | True Crime Investigações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <div class="scanline"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">🔍</div>
+      <div class="nav-logo-text">
+        TRUE CRIME
+        <span>INVESTIGAÇÕES</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#casos">Casos</a></li>
+      <li><a href="#evidencias">Evidências</a></li>
+      <li><a href="#acusacao">Acusação</a></li>
+    </ul>
+  </nav>
+
+  <div class="case-page">
+    <header class="case-header">
+      <div class="case-header-content">
+        <div class="case-header-top">
+          <span class="case-header-badge active">CASO ATIVO</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--gold);">IPES-275</span>
+        </div>
+        <h1 class="case-header-title">Solar dos Ipês</h1>
+        <div class="case-header-meta">
+          <span>🔒 Código: IPES-275</span>
+          <span>📊 Dificuldade: Fácil</span>
+          <span>📋 Evidências: 8</span>
+          <span>🏆 Pontuação Máxima: 1000</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="case-progress">
+      <div class="progress-bar">
+        <div class="progress-step completed"></div>
+        <div class="progress-step active"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+      <div class="progress-labels">
+        <span>Briefing</span>
+        <span>Evidências</span>
+        <span>Pistas</span>
+        <span>Acusação</span>
+        <span>Solução</span>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <div class="tabs-nav">
+        <button class="tab-btn active" data-tab="tab-briefing">📋 BRIEFING</button>
+        <button class="tab-btn" data-tab="tab-evidence">🔬 EVIDÊNCIAS</button>
+        <button class="tab-btn" data-tab="tab-timeline">⏱️ CRONOLOGIA</button>
+        <button class="tab-btn" data-tab="tab-suspects">👤 SUSPEITOS</button>
+        <button class="tab-btn" data-tab="tab-hints">💡 PISTAS</button>
+        <button class="tab-btn" data-tab="tab-accusation">⚖️ ACUSAÇÃO</button>
+        <button class="tab-btn" data-tab="tab-solution">🔓 SOLUÇÃO</button>
+      </div>
+
+      <div id="tab-briefing" class="tab-panel active">
+        <div class="case-file">
+          <div class="case-file-header">
+            <h2>Dossiê Forense Técnico</h2>
+            <div class="meta">CLASSIFICADO • TRUE CRIME INVESTIGAÇÕES</div>
+          </div>
+          <div class="case-file-section">
+            
+      <p><strong>RESUMO DO CASO:</strong> Morte inicialmente atribuída a parada cardíaca de Aurélio Bittencourt Ramalho, 78 anos, patriarca. Laudo toxicológico revelou digoxina 4x acima da faixa terapêutica. Overdose deliberada no chá de camomila.</p>
+
+      <p><strong>VÍTIMA:</strong> Aurélio Bittencourt Ramalho, 78 anos, patriarca. Portador de arritmia controlada com digoxina.</p>
+
+      <p><strong>CENA DO CRIME:</strong> Escritório particular da residência "Solar dos Ipês", Jardim Europa, São Paulo.</p>
+
+      <p><strong>DINÂMICA:</strong> A bandeja de chá foi servida às 20h30min. O dosador eletrônico registrou acesso pela senha de Cecília às 20h19min por 41 segundos. As câmeras internas falharam das 20h10 às 20h55. A vítima foi encontrada caída sobre a escrivaninha às 23h20min.</p>
+
+      <p><strong>EVIDÊNCIAS CHAVE:</strong> Impressão digital de Cecília no dosador (13 pontos AFIS). Log eletrônico: acesso com sua senha às 20h19min. Digoxina 4,8 ng/mL (terapêutico: 0,5-2,0). Auditoria: desvio de R$ 14,7 milhões. Novo testamento reduziria Cecília de 25% para 4%.</p>
+
+      <p><strong>MOTIVAÇÃO:</strong> Aurélio descobriu desvio de R$ 14,7 milhões promovido por Cecília. Agendou assinatura de novo testamento para o dia seguinte, reduzindo sua participação e abrindo representação criminal.</p>
+    
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-evidence" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CADEIA DE CUSTÓDIA</span>
+          <h2 class="section-title">Evidências do Caso</h2>
+        </div>
+        <div class="evidence-grid">
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🍵</div>
+            <div>
+              <div class="evidence-card-title">Xícara de Chá</div>
+              <div class="evidence-card-type">Toxicológica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Resíduo de chá de camomila com digoxina. Veículo de ingestão confirmado. Não compatível com outros alimentos do jantar.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">💊</div>
+            <div>
+              <div class="evidence-card-title">Dosador Eletrônico</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Compartimento vazio. Log registra acesso pela senha de Cecília às 20h19min por 41 segundos. Impressão parcial no botão.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📱</div>
+            <div>
+              <div class="evidence-card-title">Log Eletrônico</div>
+              <div class="evidence-card-type">Digital</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Registro auditável e inalterável. Acesso com credencial de Cecília. Fora de qualquer rotina anterior de uso.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📹</div>
+            <div>
+              <div class="evidence-card-title">Falha do CFTV</div>
+              <div class="evidence-card-type">Videomonitoramento</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Câmeras internas falharam das 20h10 às 20h55. Câmera do jardim ativa. Beatriz e Ivo filmados continuamente na varanda.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📄</div>
+            <div>
+              <div class="evidence-card-title">Rascunho do Testamento</div>
+              <div class="evidence-card-type">Documentoscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Anotação manuscrita: "conversar com Norberto — provas da Cecília em mãos". Grafotécnica confirmada (92%).</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📊</div>
+            <div>
+              <div class="evidence-card-title">Auditoria Contábil</div>
+              <div class="evidence-card-type">Contábil</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Desvio de R$ 14,7 milhões da holding. Contratos superfaturados com fornecedores de fachada. Cecília seria reduzida a 4%.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">📞</div>
+            <div>
+              <div class="evidence-card-title">Chamadas de Marcelo</div>
+              <div class="evidence-card-type">Telefônica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Registro de chamadas com corretor de apostas das 20h05 às 20h48. Álibi corroborado. Excluído como suspeito.</p>
+          </div>
+        </div>
+        
+        <div class="evidence-card">
+          <div class="evidence-card-header">
+            <div class="evidence-card-icon">🩸</div>
+            <div>
+              <div class="evidence-card-title">Laudo Toxicológico</div>
+              <div class="evidence-card-type">Necroscópica</div>
+            </div>
+          </div>
+          <div class="evidence-card-body">
+            <p>Digoxina 4,8 ng/mL (terapêutico: 0,5-2,0). Não compatível com acúmulo gradual. Overdose deliberada confirmada.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="tab-timeline" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">LINHA DO TEMPO</span>
+          <h2 class="section-title">Cronologia dos Eventos</h2>
+        </div>
+        <div class="timeline">
+          
+          <div class="timeline-item"><div class="timeline-time">10/07 • 19h50</div><div class="timeline-content">Família reunida na sala de jantar para discutir o novo testamento</div></div>
+          <div class="timeline-item"><div class="timeline-time">10/07 • 20h05</div><div class="timeline-content">Marcelo inicia chamada com corretor de apostas</div></div>
+          <div class="timeline-item"><div class="timeline-time">10/07 • 20h10</div><div class="timeline-content">Falha do CFTV interno inicia (manutenção programada)</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">10/07 • 20h15-20h50</div><div class="timeline-content">Janela toxicológica. Cecília prepara a bandeja de chá</div></div>
+          <div class="timeline-item highlight"><div class="timeline-time">10/07 • 20h19</div><div class="timeline-content">Cecília acessa o dosador eletrônico com sua senha (41s)</div></div>
+          <div class="timeline-item"><div class="timeline-time">10/07 • 20h30</div><div class="timeline-content">Chá servido ao patriarca no escritório</div></div>
+          <div class="timeline-item"><div class="timeline-time">10/07 • 23h20</div><div class="timeline-content">Marta encontra Aurélio caído sobre a escrivaninha</div></div>
+          <div class="timeline-item"><div class="timeline-time">15/07</div><div class="timeline-content">Laudo toxicológico: digoxina 4x acima. Caso reclassificado.</div></div>
+        
+        </div>
+      </div>
+
+      <div id="tab-suspects" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">PERFILAMENTO CRIMINAL</span>
+          <h2 class="section-title">Suspeitos e Envolvidos</h2>
+        </div>
+        <div class="suspects-grid">
+          
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">C</div>
+            <div class="suspect-card-info">
+              <h4>Cecília Ramalho Duprat</h4>
+              <div class="role">Filha / Diretora Financeira</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Evitar exclusão da herança</p>
+            <p><strong>Álibi:</strong> Falso</p>
+            <p><strong>Evidências:</strong> Digital no dosador, log de acesso, auditoria de R$ 14,7mi</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">M</div>
+            <div class="suspect-card-info">
+              <h4>Marcelo Ramalho</h4>
+              <div class="role">Filho do Meio</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Dívidas</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Ao telefone com corretor de apostas</p>
+            <span class="suspect-card-tag motive">MOTIVO FORTE</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">B</div>
+            <div class="suspect-card-info">
+              <h4>Beatriz Ramalho Sant'Anna</h4>
+              <div class="role">Filha Caçula</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Nenhum</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Na varanda com o marido (câmera ativa)</p>
+            <span class="suspect-card-tag alibi">ÁLIBI CORROBORADO</span>
+          </div>
+        </div>
+        
+        <div class="suspect-card">
+          <div class="suspect-card-header">
+            <div class="suspect-card-avatar">I</div>
+            <div class="suspect-card-info">
+              <h4>Ivo Salgado Nogueira</h4>
+              <div class="role">Genro</div>
+            </div>
+          </div>
+          <div class="suspect-card-body">
+            <p><strong>Motivo:</strong> Nenhum</p>
+            <p><strong>Álibi:</strong> Corroborado</p>
+            <p><strong>Evidências:</strong> Na varanda com a esposa (câmera ativa)</p>
+            <span class="suspect-card-tag alibi">ÁLIBI CORROBORADO</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+
+      <div id="tab-hints" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">SISTEMA DE APOIO</span>
+          <h2 class="section-title">Pistas Graduais</h2>
+          <p class="section-subtitle">
+            Use com moderação. Cada pista revelada reduz sua pontuação final.
+          </p>
+        </div>
+        <div class="hint-container">
+          <div class="hint-header">
+            <div class="hint-header-icon">💡</div>
+            <div class="hint-header-title">Sistema de Pistas</div>
+          </div>
+          <div class="hint-levels">
+            
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 1 — DIRECIONAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-ipes-1" onclick="revealHint('ipes', 1)">
+              REVELAR (-50 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-ipes-1">
+            A vítima morreu de overdose de digoxina 4x acima do terapêutico. O chá de camomila foi o veículo. Quem preparou a bandeja?
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 2 — APONTAMENTO</span>
+            <button class="hint-level-btn" id="hint-btn-ipes-2" onclick="revealHint('ipes', 2)">
+              REVELAR (-100 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-ipes-2">
+            A impressão de Cecília foi encontrada no dosador eletrônico. O log registrou acesso com sua senha às 20h19min por 41 segundos.
+          </div>
+        </div>
+        
+        <div class="hint-level">
+          <div class="hint-level-header">
+            <span class="hint-level-label">PISTA NÍVEL 3 — REVELAÇÃO</span>
+            <button class="hint-level-btn" id="hint-btn-ipes-3" onclick="revealHint('ipes', 3)">
+              REVELAR (-150 pts)
+            </button>
+          </div>
+          <div class="hint-level-content" id="hint-ipes-3">
+            A auditoria confirmou desvio de R$ 14,7 milhões. O novo testamento reduziria Cecília de 25% para 4%. Motivo + Oportunidade + Meio = Autoria.
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-accusation" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">FORMALIZAÇÃO</span>
+          <h2 class="section-title">Formule sua Acusação</h2>
+          <p class="section-subtitle">
+            Seja preciso. A justiça exige provas, não suposições.
+          </p>
+        </div>
+        
+    <div class="accusation-form">
+      <div class="form-group">
+        <label class="form-label">👤 AUTOR DO CRIME</label>
+        <select class="form-select" id="accusation-suspect-ipes">
+          <option value="">Selecione o suspeito...</option>
+          <option value="Cecília Ramalho Duprat">Cecília Ramalho Duprat</option><option value="Marcelo Ramalho">Marcelo Ramalho</option><option value="Beatriz Ramalho Sant'Anna">Beatriz Ramalho Sant'Anna</option><option value="Ivo Salgado Nogueira">Ivo Salgado Nogueira</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">🎯 MOTIVO</label>
+        <input type="text" class="form-input" id="accusation-motive-ipes" placeholder="Qual foi o motivo do crime?">
+      </div>
+      <div class="form-group">
+        <label class="form-label">📋 EVIDÊNCIAS QUE SUSTENTAM A ACUSAÇÃO</label>
+        <textarea class="form-textarea" id="accusation-evidence-ipes" placeholder="Liste as evidências que comprovam sua tese..."></textarea>
+      </div>
+      <button class="btn btn-danger" style="width: 100%;" onclick="submitAccusation('ipes')">
+        ⚖️ FORMALIZAR ACUSAÇÃO
+      </button>
+    </div>
+    
+      </div>
+
+      <div id="tab-solution" class="tab-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">CONFIDENCIAL</span>
+          <h2 class="section-title">Solução Oficial</h2>
+        </div>
+        
+    <div class="solution-reveal locked" id="solution-ipes">
+      <div class="solution-reveal-title">🔒 SOLUÇÃO BLOQUEADA</div>
+      <div class="solution-reveal-text">
+        A solução oficial só pode ser revelada após você formalizar sua acusação.
+        <br><br>
+        Se preferir, pode revelar a solução agora, mas sua pontuação será zerada.
+      </div>
+      <button class="btn btn-secondary" style="margin-top: 1rem;" onclick="revealSolution('ipes')">
+        🔓 REVELAR SOLUÇÃO (ZERA PONTUAÇÃO)
+      </button>
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem; display: flex; justify-content: space-between; align-items: center;">
+      <a href="../index.html" class="btn btn-secondary">
+        ← VOLTAR À CENTRAL
+      </a>
+      <div class="score-display">
+        <div class="score-display-label">PONTUAÇÃO ATUAL</div>
+        <div class="score-display-value" id="score-ipes">1000</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
